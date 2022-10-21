@@ -85,7 +85,15 @@ h6 {
 	font-weight: 400;
 }
 /*-----------------------------------------------------*/
-
+#problem::before,
+#PiedPiperCoin::before,
+#team::before {
+	display: block;
+	content: "";
+	margin-top: -75px;
+	height: 75px;
+	visibility: hidden;
+}
 .wrapper {
 	min-height: 100%;
 	display: flex;
@@ -93,11 +101,11 @@ h6 {
 }
 .header {
 	background-color: #007765;
-	max-width: 100%;
+	width: 100%;
 	overflow: hidden;
-	/* position: fixed;
+	position: fixed;
 	top: 0;
-	z-index: 50; */
+	z-index: 50;
 }
 .container {
 	max-width: 1219px;
