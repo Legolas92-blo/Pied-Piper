@@ -1,0 +1,299 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	font-family: "Roboto", sans-serif;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 32px;
+	font-weight: 400px;
+	color: #000;
+	background-color: #eee;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a {
+	color: inherit;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+/*-----------------------------------------------------*/
+#problem::before,
+#PiedPiperCoin::before,
+#team::before {
+	display: block;
+	content: "";
+	margin-top: -75px;
+	height: 75px;
+	visibility: hidden;
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.header {
+	background-color: #007765;
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 50;
+}
+.container {
+	max-width: 1219px;
+	padding: 0 55px;
+	margin: 0 auto;
+}
+.header__wrap {
+	padding: 20px 0;
+	color: #fff;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo-link {
+}
+.header__logo-icon {
+}
+.header__menu {
+}
+.header__items {
+	display: flex;
+}
+.header__item {
+}
+.header__item:last-child {
+	padding-right: 0;
+}
+.header__item:not(:last-child)::after {
+	content: "|";
+	padding: 0 6px 0 12px;
+}
+
+.header__link {
+}
+
+/*------------MAIN-------------*/
+
+.main {
+	flex: 1 1 auto;
+}
+
+/*------------BGI BLOCK-----------*/
+
+.bgi__piper-net {
+	background: url("img/pipernet.jpg") no-repeat;
+	background-size: cover;
+	padding: 160px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bgi__title {
+	font-weight: 500;
+	font-size: 72px;
+	line-height: 116%;
+	text-align: center;
+	color: #ffffff;
+}
+
+/*------------PROBLEM BLOCK-----------*/
+
+.problem {
+}
+
+.problem__wrap {
+	padding: 48px 0 92px 0;
+}
+.problem__title {
+	margin: 0 0 16px 0;
+	text-align: center;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 117%;
+	color: #007765;
+}
+.title__block {
+}
+.problem__text {
+	font-size: 32px;
+	line-height: 118%;
+}
+.problem__text:not(:last-child) {
+	margin: 0 0 37px 0;
+}
+
+.hero__bgi {
+	background: url("img/hero.jpg") center center no-repeat;
+	background-size: cover;
+	padding: 128px 0;
+}
+
+.hero__text {
+	font-style: italic;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 116%;
+	text-align: center;
+	color: #ffffff;
+}
+
+.piedpiper-coin {
+	background-color: #fff;
+}
+
+.piedpiper-coin__wrap {
+	padding: 48px 0 92px 0;
+}
+.piedpiper-coin__title {
+	margin: 0 0 20px 0;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 117%;
+	text-align: center;
+	color: #007765;
+}
+.piedpiper-coin__icon {
+	float: left;
+	margin: 0 48px 20px 0;
+	clear: both;
+}
+.piedpiper-coin__text {
+	line-height: 118%;
+}
+.piedpiper-coin__text:not(:last-child) {
+	margin: 0 0 36px 0;
+}
+
+.team {
+}
+.team__wrap {
+	padding: 48px 0 124px 0;
+	display: flex;
+	flex-direction: column;
+}
+.team__title {
+	margin: 0 0 56px 0;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 117%;
+	text-align: center;
+	color: #007765;
+}
+
+.team__items {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.team__items:not(:last-child) {
+	margin: 0 0 83px 0;
+}
+.team__item {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1 1 33.333%;
+}
+.team__photo {
+	max-width: 168px;
+	margin: 0 0 12px 0;
+}
+.team__subtitle {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 116%;
+	color: #007765;
+}
+.team__position {
+	font-style: italic;
+	font-size: 18px;
+	line-height: 116%;
+}
+
+.footer {
+	background: #333333;
+}
+
+.footer__wrap {
+	padding: 48px 0 64px 0;
+}
+.footer__text {
+	font-size: 18px;
+	line-height: 116%;
+	text-align: center;
+	color: #ffffff;
+}
